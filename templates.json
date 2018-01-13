@@ -1,53 +1,16 @@
 [
   {
     "type": "container",
-    "title": "Drupal",
-    "description": "Open-source content management framework",
-    "categories": ["CMS"],
-    "platform": "linux",
-    "logo": "https://cloudinovasi.id/assets/img/logos/drupal.png",
-    "image": "drupal:latest",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": ["/var/www/html"]
-  },
-  {
-    "type": "container",
-    "title": "FPFIS Webserver PHP-7.1",
+    "title": "FPFIS PHP-7.1 Development",
     "description": "Open-source HTTP server",
     "categories": ["webserver"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/httpd.png",
     "image": "fpfis/php71-dev",
     "ports": [
-      "80/tcp"
+      "8080/tcp"
     ],
     "volumes": ["/usr/local/apache2/htdocs/"]
-  },
-  {
-    "type": "container",
-    "title": "WordPress",
-    "description": "A free and open-source CMS",
-    "categories": ["CMS"],
-    "platform": "linux",
-    "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
-    "image": "wordpress:latest",
-    "env": [
-      {
-        "name": "WORDPRESS_DB_HOST",
-        "label": "MySQL database host",
-        "type": "container"
-      },
-      {
-        "name": "WORDPRESS_DB_PASSWORD",
-        "label": "Database password"
-      }
-    ],
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": ["/var/www/html"]
   },
   {
     "type": "container",
