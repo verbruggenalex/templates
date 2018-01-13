@@ -1,7 +1,7 @@
 [
   {
     "type": "container",
-    "title": "FPFIS PHP-7.1 Development",
+    "title": "fpfis/php71-dev",
     "description": "Open-source HTTP server",
     "categories": ["webserver"],
     "platform": "linux",
@@ -14,7 +14,7 @@
   },
   {
     "type": "container",
-    "title": "FPFIS MySQL 5.6",
+    "title": "fpfis/mysql56",
     "description": "The most popular open-source database",
     "categories": ["database"],
     "platform": "linux",
@@ -38,7 +38,7 @@
     "note": "Sets up a clone of the production site.",
     "categories": ["website"],
     "platform": "linux",
-    "logo": "http://ec.europa.eu/competition/images/logo_en.gif",
+    "logo": "https://ec.europa.eu/competition/images/logo_en.gif",
     "repository": {
       "url": "https://github.com/verbruggenalex/templates",
       "stackfile": "stacks/subsites/horizon2020.yml"
