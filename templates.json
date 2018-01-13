@@ -36,7 +36,7 @@
     "title": "Horizon2020",
     "description": "FPFIS Multisite of Horizon2020",
     "note": "Sets up a clone of the production site.",
-    "categories": ["CMS"],
+    "categories": ["website"],
     "platform": "linux",
     "logo": "http://ec.europa.eu/competition/images/logo_en.gif",
     "repository": {
@@ -49,6 +49,7 @@
         "label": "Database root password",
         "description": "Password used by the MySQL root user."
       }
-    ]
+    ],
+    "volumes": ["/usr/local/apache2/htdocs/"]
   }
 ]
