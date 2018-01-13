@@ -14,6 +14,19 @@
   },
   {
     "type": "container",
+    "title": "FPFIS Webserver PHP-7.1",
+    "description": "Open-source HTTP server",
+    "categories": ["webserver"],
+    "platform": "linux",
+    "logo": "https://cloudinovasi.id/assets/img/logos/httpd.png",
+    "image": "fpfis/php71-dev",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/usr/local/apache2/htdocs/"]
+  },
+  {
+    "type": "container",
     "title": "WordPress",
     "description": "A free and open-source CMS",
     "categories": ["CMS"],
@@ -38,12 +51,12 @@
   },
   {
     "type": "container",
-    "title": "MySQL",
+    "title": "FPFIS MySQL 5.6",
     "description": "The most popular open-source database",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mysql.png",
-    "image": "mysql:latest",
+    "image": "fpfis/mysql56",
     "env": [
       {
         "name": "MYSQL_ROOT_PASSWORD",
@@ -57,15 +70,15 @@
   },
   {
     "type": "stack",
-    "title": "Wordpress",
-    "description": "Wordpress setup with a MySQL database",
-    "note": "Deploys a Wordpress instance connected to a MySQL database.",
+    "title": "Horizon2020",
+    "description": "FPFIS Multisite of Horizon2020",
+    "note": "Sets up a clone of the production site.",
     "categories": ["CMS"],
     "platform": "linux",
-    "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
+    "logo": "http://ec.europa.eu/competition/images/logo_en.gif",
     "repository": {
-      "url": "https://github.com/portainer/templates",
-      "stackfile": "stacks/wordpress/docker-stack.yml"
+      "url": "https://github.com/verbruggenalex/templates",
+      "stackfile": "stacks/subsites/horizon2020.yml"
     },
     "env": [
       {
